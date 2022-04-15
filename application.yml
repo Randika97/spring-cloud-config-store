@@ -1,11 +1,11 @@
 spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
   datasource:
     url: jdbc:mysql://localhost:3306/sample2?createDatabaseIfNotExist=true
     username: root
     password: Safeheaven97$
     driver-class-name: com.mysql.jdbc.Driver
-   autoconfigure:
-    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
   jpa:
     hibernate:
       naming:
